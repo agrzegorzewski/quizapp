@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules
+.next
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor directories
+.idea
+.vscode
+*.swp
+*.swo
+
+# Markdown files
+*.md
