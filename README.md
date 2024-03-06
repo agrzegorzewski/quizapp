@@ -28,7 +28,9 @@ This project is a Simple Quiz App that leverages the [Open Trivia Database](http
 Before you begin, ensure you have met the following requirements:
 
 -   Node 20 or higher
+
     or
+
 -   Docker
 
 ### Build the app directly
