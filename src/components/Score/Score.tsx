@@ -1,25 +1,25 @@
-import { Badge, Stack, Title } from "@mantine/core";
+import { Stack, Title } from "@mantine/core";
+
+import { formatTime } from "~/utils/OpenTDB";
 
 import type { QuestionState } from "../Game/Game";
 
 interface IProps {
+    miliseconds: number;
     state: QuestionState[];
 }
 
-export default function Score({ state }: IProps) {
+export default function Score({ state, miliseconds }: IProps) {
     return (
         <Stack>
-            <Badge size="xl" mx="auto" color="green">
-                Correct
-            </Badge>
-            <Title order={3} ta="center">
-                {state.filter((s) => s === "correct").length}
+            <Title order={1} mx="auto" c="green.3">
+                Correct: {state.filter((s) => s === "correct").length}
             </Title>
-            <Badge size="xl" mx="auto" color="red">
-                Incorrect
-            </Badge>
-            <Title order={3} ta="center">
-                {state.filter((s) => s === "incorrect").length}
+            <Title order={1} mx="auto" c="red.3">
+                Incorrect: {state.filter((s) => s === "incorrect").length}
+            </Title>
+            <Title order={1} mx="auto" c="blue.3">
+                Time: {formatTime(miliseconds)}
             </Title>
         </Stack>
     );
