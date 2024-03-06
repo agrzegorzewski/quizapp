@@ -79,8 +79,8 @@ export default function Game({ questions }: IGameProps) {
                     onClick={activeHandlers.increment}
                     disabled={active === questions.length - 1}
                     w={{
-                        base: "50%",
-                        sm: "100%",
+                        base: "100%",
+                        sm: "50%",
                     }}
                 >
                     Next question
@@ -91,8 +91,8 @@ export default function Game({ questions }: IGameProps) {
                     disabled={active === 0}
                     onClick={activeHandlers.decrement}
                     w={{
-                        base: "50%",
-                        sm: "100%",
+                        base: "100%",
+                        sm: "50%",
                     }}
                 >
                     Previous question
@@ -105,8 +105,8 @@ export default function Game({ questions }: IGameProps) {
                         modalOpen();
                     }}
                     w={{
-                        base: "50%",
-                        sm: "100%",
+                        base: "100%",
+                        sm: "50%",
                     }}
                 >
                     Submit

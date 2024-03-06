@@ -74,8 +74,8 @@ export default function Question({
                         key={index}
                         onClick={() => handleSelectAnswer(answer)}
                         w={{
-                            base: "50%",
-                            sm: "100%",
+                            base: "100%",
+                            sm: "50%",
                         }}
                         //this could be better
                         color={
