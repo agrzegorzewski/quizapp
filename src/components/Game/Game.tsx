@@ -41,8 +41,15 @@ export default function Game({ questions }: IGameProps) {
                 <Score state={gameState} />
             </Modal>
 
-            <Stack w="60%" mx="auto">
+            <Stack
+                mx="auto"
+                w={{
+                    base: "90%",
+                    sm: "60%",
+                }}
+            >
                 <Stepper
+                    pt="2rem"
                     size="sm"
                     active={active}
                     icon={<IconQuestionMark />}
@@ -67,30 +74,39 @@ export default function Game({ questions }: IGameProps) {
                     ))}
                 </Stepper>
                 <Button
-                    w="50%"
                     mx="auto"
                     color="lime"
                     onClick={activeHandlers.increment}
                     disabled={active === questions.length - 1}
+                    w={{
+                        base: "50%",
+                        sm: "100%",
+                    }}
                 >
                     Next question
                 </Button>
                 <Button
-                    w="50%"
                     mx="auto"
                     color="grape"
                     disabled={active === 0}
                     onClick={activeHandlers.decrement}
+                    w={{
+                        base: "50%",
+                        sm: "100%",
+                    }}
                 >
                     Previous question
                 </Button>
                 <Button
-                    w="50%"
                     mx="auto"
                     color="dark.3"
                     disabled={gameState.some((s) => s === "unanswered")}
                     onClick={() => {
                         modalOpen();
+                    }}
+                    w={{
+                        base: "50%",
+                        sm: "100%",
                     }}
                 >
                     Submit

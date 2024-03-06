@@ -74,7 +74,14 @@ export default function StartGameForm({ categories }: IProps) {
                 );
             }}
         >
-            <Stack w="60%" p="2rem" mx="auto">
+            <Stack
+                p="2rem"
+                mx="auto"
+                w={{
+                    base: "90%",
+                    sm: "60%",
+                }}
+            >
                 <NumberInput
                     label="Number of questions"
                     {...form.getInputProps("numberOfQuestions")}

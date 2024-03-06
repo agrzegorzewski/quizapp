@@ -70,10 +70,13 @@ export default function Question({
             <Stack mt="1rem">
                 {answers.map((answer, index) => (
                     <Button
-                        w="60%"
                         mx="auto"
                         key={index}
                         onClick={() => handleSelectAnswer(answer)}
+                        w={{
+                            base: "50%",
+                            sm: "100%",
+                        }}
                         //this could be better
                         color={
                             !answered
