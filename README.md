@@ -1,5 +1,9 @@
 # Simple Quiz App
 
+## Live Demo
+
+A live demo of the app is available at [https://quizapp.grzegorzew.ski](https://quizapp.grzegorzew.ski).
+
 ## Introduction
 
 This project is a Simple Quiz App that leverages the [Open Trivia Database](https://opentdb.com) to fetch an assortment of questions for users to answer. Built with Next.js 14.1 and utilizing Mantine for its UI components, this app is designed to provide an engaging and responsive quiz experience. Questions are fetched server-side and delivered along with the client UI, ensuring a seamless user experience without the need for refetching client-side.
