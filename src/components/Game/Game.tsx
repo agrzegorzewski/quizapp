@@ -153,6 +153,7 @@ export default function Game({ questions }: IGameProps) {
                         sm: "50%",
                     }}
                     onClick={() => {
+                        timerInterval.stop();
                         setModalScoreTime(miliseconds);
                         modalOpen();
                     }}
